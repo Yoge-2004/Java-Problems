@@ -1,5 +1,3 @@
-package Array;
-
 //Array Problems
 import java.util.Scanner;
 import java.util.Arrays;
