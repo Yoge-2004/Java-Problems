@@ -76,5 +76,3 @@ class ArrayProblems {
         System.out.println("Leader Elements are: " + Arrays.toString(LeaderArray.toArray()));
     }
 }
-
-}
