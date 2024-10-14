@@ -29,7 +29,7 @@ class ArrayProblems {
     int twoLargestNumberSum (int arr[]) {
         int chances = 2, sum = 0, max = -99999;
         while (chances > 0) {
-            max = -99999;
+            max = Integer.MIN_VALUE;
             int i = 0;
             for (;i < arr.length;) {
                 if (max < arr[i]) {
@@ -49,7 +49,7 @@ class ArrayProblems {
     void find_delete (int arr[], int max) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == max) {
-                arr[i] = -99999;
+                arr[i] = Integer.MIN_VALUE;
                 break;
             }
         }
