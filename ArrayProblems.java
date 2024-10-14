@@ -1,6 +1,9 @@
-//Array Problems
+/* Array Problems */
+
+//Importing necessary libraries
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 class ArrayProblems {
     //Finding 3rd largest number in the given array.
@@ -51,4 +54,27 @@ class ArrayProblems {
             }
         }
     }
+
+    //Finding Leader Elements of the array.
+    void ArrayLeader (int arr[]) {
+        ArrayList <Integer> LeaderArray = new ArrayList<>();
+        for (int i = 0; i < arr.length - 1; i++) {
+            boolean flag = false;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] >= arr[j]){
+                    flag = true;
+                }
+                else {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                LeaderArray.add(arr[i]);
+            }
+        }
+        LeaderArray.add(arr[arr.length-1]);
+        System.out.println("Leader Elements are: " + Arrays.toString(LeaderArray.toArray()));
+    }
+}
+
 }
