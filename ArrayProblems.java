@@ -10,7 +10,7 @@ class ArrayProblems {
     int thirdLargestNumber (int arr[]) {
         int chances = 3, max = -99999;
         while (chances > 0) {
-            max = -99999;
+            max = Integer.MIN_VALUE;
             int i = 0;
             for (; i < arr.length;) {
                 if (max < arr[i]) {
